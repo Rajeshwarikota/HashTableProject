@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,8 +52,12 @@ namespace HashTableProject
             }
             Console.WriteLine("Displaying Freuency of HashTable");
             hashTable.Display();
+            string s = "avoidable";
+            hashTable.Remove(s);
+            Console.WriteLine("After removed an item {0}", s);
+            hashTable.Display();
+
         }
-       
     }
 }
 

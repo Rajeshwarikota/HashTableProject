@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HashTableProject
 {
-    internal class MyMapNode<K,V>
+    internal class MyMapNode<K, V>
     {
-        public struct KeyValue<k,v>
+        public struct KeyValue<k, v>
         {
             public k Key { get; set; }
             public v Value { get; set; }
@@ -100,7 +100,8 @@ namespace HashTableProject
             if (itemFound)
             {
                 linkedList.Remove(foundItem);
-                //Console.WriteLine("Removed successfully with key " + foundItem.Key);
+                //Console.WriteLine("{0} Removed successfully",foundItem.Key);
+                //Display();
             }
         }
 
